@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Formulario de texto</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="big-square">
+      <p class="well-styled-phrase">Formulario de Texto.</p>
+    </div>
+    <div class="lighter-strip"></div>
+    <div class="form-container">
+      <form class="custom-form" id="myForm" method="post" action="new.php">
+
+        <label for="name">Nome:</label>
+        <input type="text" value="" id="nome" name="nome" placeholder="Nome" required>
+
+        <label for="email">Email:</label>
+        <input type="text" value="" id="email" name="email" placeholder="E-mail" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+
+        <input type="submit" name="submit">
+
+      </form>
+    </div>
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
